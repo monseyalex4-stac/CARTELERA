@@ -40,3 +40,6 @@ La aplicación bajo prueba (System Under Test) es una plataforma de gestión de 
 3. Abre la extensión y selecciona "Open an existing project".
 4. Carga el archivo `CINEPLEX.side`.
 5. Ejecuta el Test Suite y observa los resultados en tiempo real.
+
+
+https://github.com/santijim450/CARTELERA  es el codígo fuente.
