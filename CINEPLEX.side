@@ -1,0 +1,633 @@
+{
+  "id": "fafff2e1-bf5b-4cbd-ae7c-c46a9eeb8507",
+  "version": "2.0",
+  "name": "CINEPLEX",
+  "url": "https://cineplex.infinityfreeapp.com/index.html",
+  "tests": [{
+    "id": "45d91ac7-1cdd-4d5f-b59c-aa4415474937",
+    "name": "AÑADIR/BUSCAR/PELÍCULA",
+    "commands": [{
+      "id": "e70a43a2-5807-4861-ad40-285925c05cf8",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6da12c88-5013-46b8-a638-7f3182a22fc3",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3af98895-7154-428c-a980-74fd4fa80436",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=➕ Añadir Película / Buscador API",
+      "targets": [
+        ["linkText=➕ Añadir Película / Buscador API", "linkText"],
+        ["css=a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'➕ Añadir Película / Buscador API')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'agregar.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'➕ Añadir Película / Buscador API')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "767726bf-5d28-49a9-ab1e-4ef2a8682618",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae13925c-4a4a-46b9-a201-16284e7dcfe5",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputBusqueda",
+      "targets": [
+        ["id=inputBusqueda", "id"],
+        ["css=#inputBusqueda", "css:finder"],
+        ["xpath=//input[@id='inputBusqueda']", "xpath:attributes"],
+        ["xpath=//form[@id='formaBusqueda']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a715162-3f0c-4083-98f4-f9ca40744adb",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputBusqueda",
+      "targets": [
+        ["id=inputBusqueda", "id"],
+        ["css=#inputBusqueda", "css:finder"],
+        ["xpath=//input[@id='inputBusqueda']", "xpath:attributes"],
+        ["xpath=//form[@id='formaBusqueda']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "El canto de la Sirena"
+    }, {
+      "id": "994386be-255a-48ae-8bf0-51e985a34539",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddf309ee-7612-4b59-97e7-20b375e55d16",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar",
+      "targets": [
+        ["css=.btn-buscar", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formaBusqueda']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'🔍 Buscar en API')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28bdd8b0-8c20-49db-afce-71842a4cbb3c",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5abe2695-aa11-4a72-869e-5f595fd22b9d",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcfbe2a0-e0ca-4d1d-9367-022fe996ce9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-guardar",
+      "targets": [
+        ["css=.btn-guardar", "css:finder"],
+        ["xpath=//div[@id='resultados']/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'➕ Guardar en Cartelera')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f355e0c2-cab7-47a6-8d5c-f131eaf03745",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "31fc4284-6bc3-4036-9f56-ae5a23f1de78",
+    "name": "ELIMINAR PELÍCULA",
+    "commands": [{
+      "id": "c25a8610-7d62-48fc-a5ca-02e59779377a",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bfa9e02-40a3-4887-8d96-aee7aa905f45",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edcde975-0b49-436f-85d3-e9c622b36811",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=➕ Añadir Película / Buscador API",
+      "targets": [
+        ["linkText=➕ Añadir Película / Buscador API", "linkText"],
+        ["css=a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'➕ Añadir Película / Buscador API')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'agregar.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'➕ Añadir Película / Buscador API')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "788e0e05-f15d-4aaf-a24b-0aae9ac0a660",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8dab65c7-12c1-4d4d-bd33-9c129008fc53",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputBusqueda",
+      "targets": [
+        ["id=inputBusqueda", "id"],
+        ["css=#inputBusqueda", "css:finder"],
+        ["xpath=//input[@id='inputBusqueda']", "xpath:attributes"],
+        ["xpath=//form[@id='formaBusqueda']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc4311e9-413c-4de8-b01e-48df56b0adf4",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputBusqueda",
+      "targets": [
+        ["id=inputBusqueda", "id"],
+        ["css=#inputBusqueda", "css:finder"],
+        ["xpath=//input[@id='inputBusqueda']", "xpath:attributes"],
+        ["xpath=//form[@id='formaBusqueda']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "El canto de la Sirena"
+    }, {
+      "id": "779e22c9-6e0d-40e8-b60e-75a560a7a05a",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3948d37d-f069-48b8-b792-db4d46923cea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar",
+      "targets": [
+        ["css=.btn-buscar", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formaBusqueda']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'🔍 Buscar en API')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "047864e4-4605-4219-9ce3-a8ba5ec796e3",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf973552-97c1-4a22-a112-54052816fef1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-guardar",
+      "targets": [
+        ["css=.btn-guardar", "css:finder"],
+        ["xpath=//div[@id='resultados']/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'➕ Guardar en Cartelera')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "605bd91a-e050-4aab-a323-7b0ed25de502",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cae341f-01d5-4165-8311-66a38f544040",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c40dfaae-414a-4404-92c4-9e67728df102",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tarjeta:nth-child(8) .btn-eliminar",
+      "targets": [
+        ["css=.tarjeta:nth-child(8) .btn-eliminar", "css:finder"],
+        ["xpath=//div[@id='listaPeliculas']/div[8]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[8]/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7268988a-e7d6-4613-8a48-762e6273c07d",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5840d2e9-a99c-462b-a953-ccd5420a292b",
+    "name": "EDITAR PELÍCULA",
+    "commands": [{
+      "id": "aadc7280-3ae8-4d08-b103-5ecda05f2af7",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3572a706-b3f9-4f51-a786-973c58d979ab",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "527c059f-e376-4b46-ba8a-69c73c44f1fe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=➕ Añadir Película / Buscador API",
+      "targets": [
+        ["linkText=➕ Añadir Película / Buscador API", "linkText"],
+        ["css=a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'➕ Añadir Película / Buscador API')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'agregar.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'➕ Añadir Película / Buscador API')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44fc1a7a-d4e5-4725-9347-c6d4a714955d",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "153d8ae2-32f2-448a-a886-950a5724e01c",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputBusqueda",
+      "targets": [
+        ["id=inputBusqueda", "id"],
+        ["css=#inputBusqueda", "css:finder"],
+        ["xpath=//input[@id='inputBusqueda']", "xpath:attributes"],
+        ["xpath=//form[@id='formaBusqueda']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f96ad41a-725c-4e66-85dc-149be4b9954d",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputBusqueda",
+      "targets": [
+        ["id=inputBusqueda", "id"],
+        ["css=#inputBusqueda", "css:finder"],
+        ["xpath=//input[@id='inputBusqueda']", "xpath:attributes"],
+        ["xpath=//form[@id='formaBusqueda']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "El canto de la Sirena"
+    }, {
+      "id": "124f49c2-9b1f-44c2-8b70-f63e7b68e8b3",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e317fa4-8854-4fd9-a8ae-72a0e3768685",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-buscar",
+      "targets": [
+        ["css=.btn-buscar", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formaBusqueda']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'🔍 Buscar en API')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de688ace-9ac7-47f3-9c1d-9b3662d5d627",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69ac02f8-4ec5-4bb1-970f-a3f3954efc69",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66a08cdb-24e7-4814-8dd2-564d4f6a9fd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-guardar",
+      "targets": [
+        ["css=.btn-guardar", "css:finder"],
+        ["xpath=//div[@id='resultados']/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'➕ Guardar en Cartelera')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3af4eac-bc96-4136-8a6b-5fbab01c1b74",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//h3[contains(text(), 'El canto de la Sirena')]",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "6f4b850f-b324-4544-a438-17d95a779169",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[contains(@class, 'tarjeta')]//h3[contains(text(), 'El canto de la Sirena')]/..//button[contains(@class, 'btn-editar')]",
+      "targets": [
+        ["css=.tarjeta:nth-child(8) .btn-editar", "css:finder"],
+        ["xpath=//div[@id='listaPeliculas']/div[8]/div/button", "xpath:idRelative"],
+        ["xpath=//div[8]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "715a2569-cd27-49b0-a0ed-0a1cfbfc938c",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9fb761c-906b-4439-aa68-9d3325f7f862",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c05e5004-7178-453f-956d-4f3b87d4ff6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=titulo",
+      "targets": [
+        ["id=titulo", "id"],
+        ["name=titulo", "name"],
+        ["css=#titulo", "css:finder"],
+        ["xpath=//input[@id='titulo']", "xpath:attributes"],
+        ["xpath=//form[@id='forma']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9815a95f-c4c3-469c-8014-d22d0ad2a5e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=titulo",
+      "targets": [],
+      "value": "Sirena"
+    }, {
+      "id": "7a1c5c94-2439-4ee4-924c-1f80e491f300",
+      "comment": "",
+      "command": "click",
+      "target": "id=genero",
+      "targets": [
+        ["id=genero", "id"],
+        ["name=genero", "name"],
+        ["css=#genero", "css:finder"],
+        ["xpath=//input[@id='genero']", "xpath:attributes"],
+        ["xpath=//form[@id='forma']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e1df4d9-e949-4df9-ab1e-5548cb80839e",
+      "comment": "",
+      "command": "type",
+      "target": "id=genero",
+      "targets": [],
+      "value": "Comedy"
+    }, {
+      "id": "51566ea9-3b5f-4a2f-ab92-5a112f5c3516",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-guardar",
+      "targets": [
+        ["css=.btn-guardar", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='forma']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'💾 Guardar Cambios')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8ed7ec9e-3f88-413e-9888-663ba085f1dc",
+    "name": "RECOMENDACIONES",
+    "commands": [{
+      "id": "f83bbfeb-6948-4ea9-9cdb-394bdd58b4b2",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43c8b950-a0b5-4146-964f-c4ad8a80e752",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8c49326-ef4b-440e-a84b-e0f68b4f9ff8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=⭐ Recomendaciones",
+      "targets": [
+        ["linkText=⭐ Recomendaciones", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'⭐ Recomendaciones')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'recomendaciones.html')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'⭐ Recomendaciones')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df825b73-573d-4e23-b4a8-ab2eec3229b5",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5f3accd-f881-44e4-bfcd-6e2e36542154",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tarjeta:nth-child(10) > .boton-obtener",
+      "targets": [
+        ["css=.tarjeta:nth-child(10) > .boton-obtener", "css:finder"],
+        ["xpath=//div[@id='resultados']/div[10]/button", "xpath:idRelative"],
+        ["xpath=//div[10]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17112317-0c5e-4bc5-978b-df659e90c301",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a956b64-4cdf-4161-be9d-97e649871a8b",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnVolver",
+      "targets": [
+        ["id=btnVolver", "id"],
+        ["css=#btnVolver", "css:finder"],
+        ["xpath=//button[@id='btnVolver']", "xpath:attributes"],
+        ["xpath=//div[@id='vistaDetalle']/button", "xpath:idRelative"],
+        ["xpath=//body/div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'⬅ Volver a recomendaciones')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a224b1a-49ba-4f53-8cff-5323ce637eff",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35e2822c-7337-4249-8870-b2e76b47dd0b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=⬅ Volver a Mi Cartelera",
+      "targets": [
+        ["linkText=⬅ Volver a Mi Cartelera", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'⬅ Volver a Mi Cartelera')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'⬅ Volver a Mi Cartelera')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f703f095-032c-4a0d-bb2c-59145c828722",
+    "name": "UBICACIÓN",
+    "commands": [{
+      "id": "920b5c36-32c7-43e4-8e8f-b72685660705",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0f57343-3dd9-4d34-b258-40be46ee2143",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec4b7a98-8c3c-48d4-bf5c-a4462d1253a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=📍 Ubicar Cine",
+      "targets": [
+        ["linkText=📍 Ubicar Cine", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'📍 Ubicar Cine')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'ubicacion.html')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'📍 Ubicar Cine')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5d4fc5a-34dc-417a-b9a0-c73422337188",
+      "comment": "",
+      "command": "pause",
+      "target": "3500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae0674bc-ad9b-49dc-b3e4-29768c60f234",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLocalizar",
+      "targets": [
+        ["id=btnLocalizar", "id"],
+        ["css=#btnLocalizar", "css:finder"],
+        ["xpath=//button[@id='btnLocalizar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'📍 Buscar con mi GPS actual')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84166bcf-00f6-4106-b1bc-f34d106eaab9",
+      "comment": "",
+      "command": "pause",
+      "target": "4000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e5bee92-fbd0-4f24-bfa5-ed2ccf2215df",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLocalizar",
+      "targets": [
+        ["id=btnLocalizar", "id"],
+        ["css=#btnLocalizar", "css:finder"],
+        ["xpath=//button[@id='btnLocalizar']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Mostrando cines cerca de ti')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "91bfe2ea-43e5-40cc-a2a9-f84bb49bd7a2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://cineplex.infinityfreeapp.com/index.html"],
+  "plugins": []
+}
