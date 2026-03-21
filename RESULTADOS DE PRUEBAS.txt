@@ -1,0 +1,27 @@
+RESULTADOS DE PRUEBAS HECHAS CON CURL
+
+http://localhost:8000/php/agrega_pelicula.php
+RESULTADO:
+
+{"status":400,"title":"Los datos recibidos no est\u00e1n en formato JSON.","type":"\/errors\/datosnojson.html"}
+
+http://localhost:8000/php/cartelera.php
+RESULTADO:
+
+[{"id":"1","titulo":"Batman","genero":"Comedy","imagen":"https:\/\/static.tvmaze.com\/uploads\/images\/medium_portrait\/6\/16463.jpg"},{"id":"3","titulo":"101 Dalmatians: The Series","genero":"Comedy","imagen":"https:\/\/static.tvmaze.com\/uploads\/images\/medium_portrait\/34\/85213.jpg"},{"id":"4","titulo":"Ghost Hunters","genero":"Supernatural","imagen":"https:\/\/static.tvmaze.com\/uploads\/images\/medium_portrait\/456\/1140435.jpg"},{"id":"5","titulo":"Batman Beyond","genero":"Action","imagen":"https:\/\/static.tvmaze.com\/uploads\/images\/medium_portrait\/4\/10842.jpg"},{"id":"6","titulo":"Batman Unlimited","genero":"Action","imagen":"https:\/\/static.tvmaze.com\/uploads\/images\/medium_portrait\/38\/96515.jpg"}]
+
+http://localhost:8000/php/recupera_pelicula.php?id=1
+RESULTADO:
+
+{"id":"1","titulo":"Batman","genero":"Comedy","imagen":"https:\/\/static.tvmaze.com\/uploads\/images\/medium_portrait\/6\/16463.jpg"}
+
+http://localhost:8000/php/edita_pelicula.php
+RESULTADO:
+
+{"status":400,"title":"Los datos recibidos no est\u00e1n en formato JSON.","type":"\/errors\/datosnojson.html"}
+
+
+http://localhost:8000/php/elimina_pelicula.php?id=1
+RESULTADO:
+
+{"mensaje":"Pel\u00edcula eliminada correctamente."}
